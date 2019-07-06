@@ -1,0 +1,81 @@
+nav{
+    background: white;
+    color:black;
+}
+.nav-wrapper .brand-logo{
+    padding-left:10px;
+    color: black;
+    background: white;
+}
+
+
+nav ul a{
+    color:black ;
+}
+
+/* label color */
+.input-field label {
+    color: white;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color:white;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border: 1px solid white;
+    padding-left:10px;
+    box-shadow: 0 1px 0 0 white;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: white;
+  }
+  input[type=password]:not(.browser-default):focus:not([readonly]){
+      border-bottom: 0.5px solid white;
+      box-shadow: 0 1px 0 0 white;
+  }
+  input[type=password]:not(.browser-default):focus:not([readonly])+label{
+    color:white;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 0.5px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+input[type=text]:not(.browser-default):focus:not([readonly])+label{
+  color:white;
+}
+  input[type=text]:not(.browser-default){
+    background: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 14px 0 8px 0;
+    padding-left: 7px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+  }
+@media only screen and (max-width: 600px) {
+    .nav-wrapper .brand-logo{
+        padding-left:0px;
+    }
+  }
