@@ -12,7 +12,11 @@ nav{
 nav ul a{
     color:black ;
 }
-
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
 /* label color */
 .input-field label {
     color: white;
@@ -80,4 +84,12 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
     .nav-wrapper .brand-logo{
         padding-left:0px;
     }
+    .row .col.s6 {
+        width: 50%;
+        margin-left: 6px;
+        left: auto;
+        right: auto;
+        margin-top: 6px;
+        margin-bottom:6px;
   }
+}
