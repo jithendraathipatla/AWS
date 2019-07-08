@@ -268,16 +268,23 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
     background: #DD4B39;
   }
 
+  #submitAdjust{
+    border-radius:3px; 
+    margin-bottom:30px;
+  }
+
 @media only screen and (max-width: 600px) {
     .nav-wrapper .brand-logo{
         padding-left:0px;
     }
-    .row .col.s6 {
-        width: 50%;
-        margin-left: 6px;
-        left: auto;
-        right: auto;
-        margin-top: 6px;
-        margin-bottom:6px;
+    .row .col.s4 {
+      width: 99.333333%;
+      margin-left: auto;
+      left: auto;
+  }
+  #submitAdjust{
+    border-radius:3px; 
+    margin-bottom:30px;
+    margin-left:180px;
   }
 }
