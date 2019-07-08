@@ -25,9 +25,9 @@
         <nav>
           <div class="nav-wrapper" >
             <a href="#!" class="brand-logo" >AWS</a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="sass.html" >LogIn</a></li>
-              <li><a href="badges.html">SignUp</a></li>
+            <ul class="right hide-on-med-and-down" style="padding-left: 140px;">
+              <li><a href="#" onclick="singinshow()" >LogIn</a></li>
+              <li><a href="#" onclick="showContent()">SignUp</a></li>
             </ul>
           </div>
         </nav>
@@ -36,7 +36,7 @@
          <div class="col s12"></div>
        </div>
       
-      
+      <div id="form_filling">
       <div class="row">
         <div class="col s4"></div>
           <div class="col s4" style="background-color:white; padding-top:30px; border-radius:4px;">
@@ -94,8 +94,44 @@
             </div>
           </div>
         </div>
+      </div>
+      </div>
+
+
+        <div id="login-box" style="display:none;">
+          <div class="left">
+            <h1>Sign up</h1>
+            
+            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="email" placeholder="E-mail" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password2" placeholder="Retype password" />
+            
+            <input type="submit" name="signup_submit" value="Sign me up" />
+          </div>
+          
+          <div class="right">
+            <span class="loginwith">Sign in with<br />social network</span>
+            
+            <button class="social-signin facebook">Log in with facebook</button>
+            <button class="social-signin twitter">Log in with Twitter</button>
+            <button class="social-signin google">Log in with Google+</button>
+          </div>
+          <div class="or">OR</div>
+        </div>
               
       
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    function singinshow(){
+      document.getElementById("login-box").style.display = "block";
+      document.getElementById("form_filling").style.display="none";
+    }
+    
+    function showContent(){
+      document.getElementById("login-box").style.display = "none";
+      document.getElementById("form_filling").style.display= "block";
+    }
+    </script>
 </body>
 </html>
